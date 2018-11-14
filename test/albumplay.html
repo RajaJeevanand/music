@@ -67,7 +67,7 @@
             <div class="card" style="width: 240px;">
               <div class="card-body">
                 <img class="btn" id="btn1" src="img/girlslikeyou.jpg" width="200px;" alt="">
-                <h5  id="songname1" class="card-title">Title</h5>
+                <h5  id="songname1" class="card-title">Maroon 5</h5>
                 <p class="card-text">Content</p>
               </div>
             </div>
@@ -103,7 +103,7 @@
             <div class="container">
               <p id="song" class="text-danger bg-primary"> </p>
             </div>
-          <audio id="audio" src="audio/Maroon 5.mp3" controls controlsList="nodownload" style="width: 1040px;"></audio>
+          <audio id="audio"  src="audio/Maroon 5.mp3" controls controlsList="nodownload" style="width: 1040px;"></audio>
         </div>
         </div>
       </div>
@@ -112,32 +112,37 @@
 
 <script>
 
-  $("#btn").click(function(){
-
-    Audio.name("src=audio/promises.mp3");
-
-  });
-
-
   $("#btn1").click(function(){
 
-    $("#song").html("Maroon 5");
+    $("#audio").attr("src","audio/Promises.mp3");
 
   });
 
-    $("#btn2").click(function(){
 
-  $("#song").html("Promises");
+  $("#btn2").click(function(){
+
+    $("#audio").attr("src","audio/Maroon 5.mp3");
+
+
+  });
+
+    $("#btn3").click(function(){
+
+      $("#audio").attr("src","audio/Promises.mp3");
+
 
 });
 
-  $("#btn3").click(function(){
+$("#btn1").click(function(){
 
-$("#song").html("Bruno Mars");
-
+    $("#song").html("Maroon 5");
 });
 
 
+$("#btn2").click(function(){
+
+$("#song").html("Promises");
+});
 
 </script>
 </html>
