@@ -8,6 +8,8 @@
 
 <link rel="stylesheet" href="style.css">
 
+<link rel="jQuery" href="jquery.js">
+
 
 <!-- Audio Player CSS & Scripts -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -61,49 +63,72 @@
       </div>
     </div>  -->    
   
-      <div class="container">
+      <div class="container bg-primary">
         <div class="row">
-          <div class="col-sm-2 my-3">
+          <div class="col-sm-2 my-3 mx-5">
             <div class="card" style="width: 240px;">
               <div class="card-body">
-                <img class="btn" id="btn1" src="img/girlslikeyou.jpg" width="200px;" alt="">
+                <img class="btn" id="btn1" src="img/maroon 5/girls like you.jpg" width="200px;" alt="">
                 <h5  id="songname1" class="card-title">Maroon 5</h5>
-                <p class="card-text">Content</p>
+                <p class="card-text">Girls Like You</p>
               </div>
             </div>
           </div>
 
-          <div class="col-sm-2 my-3">
+          <div class="col-sm-2 my-3 mx-5">
               <div class="card" style="width: 240px;">
                 <div class="card-body">
-                  <img class="btn" id="btn2" src="img/Promises.png" width="200px;" alt="">
-                  <h5 id="songname2" class="card-title">Promises</h5>
-                  <p class="card-text">Content</p>
+                  <img class="btn" id="btn2" src="img/maroon 5/sugar.jpg" width="200px;" alt="">
+                  <h5 id="songname2" class="card-title">Maroon 5</h5>
+                  <p class="card-text">Sugar</p>
                 </div>
               </div>
             </div>
 
-            <div class="col-sm-2 my-3">
+            <div class="col-sm-2 my-3 mx-5">
                 <div class="card" style="width: 240px;">
                   <div class="card-body">
 
-                    <img class="btn" id="btn3" src="img/bruno mars.jpg" width="200px;" alt="">
-                    <h5 class="card-title">Bruno Mars</h5>
-                    <p class="card-text">Content</p>
+                    <img class="btn" id="btn3" src="img/maroon 5/animals.jpg" width="200px;" alt="">
+                    <h5 class="card-title">Maroon 5</h5>
+                    <p class="card-text">animals</p>
                   </div>
                 </div>
-              </div>        
+              </div>   
+              
+              <div class="col-sm-2 my-3 mx-5">
+                <div class="card" style="width: 240px;">
+                  <div class="card-body">
+
+                    <img class="btn" id="btn4" src="img/maroon 5/Moves Like Jagger.png" width="200px;" alt="">
+                    <h5 class="card-title">Maroon 5</h5>
+                    <p class="card-text">Move Like Jagger</p>
+                  </div>
+                </div>
+              </div>    
+
+              <div class="col-sm-2 my-3 mx-5">
+                <div class="card" style="width: 240px;">
+                  <div class="card-body">
+
+                    <img class="btn" id="btn5" src="img/maroon 5/one more night.jpg" width="200px;" alt="">
+                    <h5 class="card-title">Maroon 5</h5>
+                    <p class="card-text">One More night</p>
+                  </div>
+                </div>
+              </div>    
+
         </div>  
       </div>
 
       <div class="container" id="audio-player">
       <div class="row" style="margin-top: 340px;">
         <div class="col-sm-2 my-3">
-          <div class="card-bottom">
-            <div class="container">
-              <p id="song" class="text-danger bg-primary"> </p>
+          <div class="card">
+            <div class="card-body">
+              <p id="song" class="text-danger bg-warning" style="width: 247px;"> </p>
             </div>
-          <audio id="audio"  src="audio/Maroon 5.mp3" controls controlsList="nodownload" style="width: 1040px;"></audio>
+          <audio id="audio" autoplay  class="fixed-top" src="audio/Maroon 5.mp3" controls controlsList="nodownload" style="width: 1514px;"></audio>
         </div>
         </div>
       </div>
@@ -114,34 +139,61 @@
 
   $("#btn1").click(function(){
 
-    $("#audio").attr("src","audio/Promises.mp3");
+    $("#audio").attr("src","audio/marron 5/girls like you.mp3");
 
   });
 
 
   $("#btn2").click(function(){
 
-    $("#audio").attr("src","audio/Maroon 5.mp3");
+    $("#audio").attr("src","audio/maroon 5/Sugar.mp3");
 
 
   });
 
     $("#btn3").click(function(){
 
-      $("#audio").attr("src","audio/Promises.mp3");
+      $("#audio").attr("src","audio/marron 5/animals.mp3");
+});
 
 
+    $("#btn4").click(function(){
+
+$("#audio").attr("src","audio/marron 5/Moves Like Jagger.mp3");
+});
+
+
+    $("#btn5").click(function(){
+
+$("#audio").attr("src","audio/marron 5/One More Night.mp3");
 });
 
 $("#btn1").click(function(){
 
-    $("#song").html("Maroon 5");
+    $("#song").html("Girls Like You");
 });
 
 
 $("#btn2").click(function(){
 
-$("#song").html("Promises");
+$("#song").html("Sugar");
+});
+
+
+$("#btn3").click(function(){
+
+$("#song").html("Animals");
+});
+
+$("#btn4").click(function(){
+
+$("#song").html("Move Like Jagger");
+});
+
+
+$("#btn5").click(function(){
+
+$("#song").html("One More Night");
 });
 
 </script>

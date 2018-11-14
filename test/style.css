@@ -1,6 +1,12 @@
 #song{
 
     font-size: 30px; 
-    margin-left: -200px; 
-    margin-bottom: -30px;
+    margin: 0px;
+    margin-top: -950px;
+    margin-left: -220px;
+}
+
+html,body{
+
+    background-color: black;
 }
