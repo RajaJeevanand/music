@@ -1,6 +1,6 @@
-#audio{
-    border-style: dashed;
-    border-bottom-style: double;
-    border-bottom-left-radius:900px;
-    border-bottom-right-radius:900px;
+#song{
+
+    font-size: 30px; 
+    margin-left: -200px; 
+    margin-bottom: -30px;
 }

@@ -8,6 +8,13 @@
 
 <link rel="stylesheet" href="style.css">
 
+
+<!-- Audio Player CSS & Scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="js/mediaelement-and-player.min.js"></script>
+<link rel="stylesheet" href="css/style.css" media="screen">
+<!-- end Audio Player CSS & Scripts -->
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
   </head>
@@ -59,8 +66,8 @@
           <div class="col-sm-2 my-3">
             <div class="card" style="width: 240px;">
               <div class="card-body">
-                <img src="img/girlslikeyou.jpg" width="200px;" alt="">
-                <h5 class="card-title">Title</h5>
+                <img class="btn" id="btn1" src="img/girlslikeyou.jpg" width="200px;" alt="">
+                <h5  id="songname1" class="card-title">Title</h5>
                 <p class="card-text">Content</p>
               </div>
             </div>
@@ -69,8 +76,8 @@
           <div class="col-sm-2 my-3">
               <div class="card" style="width: 240px;">
                 <div class="card-body">
-                  <img src="img/girlslikeyou.jpg" width="200px;" alt="">
-                  <h5 class="card-title">Title</h5>
+                  <img class="btn" id="btn2" src="img/Promises.png" width="200px;" alt="">
+                  <h5 id="songname2" class="card-title">Promises</h5>
                   <p class="card-text">Content</p>
                 </div>
               </div>
@@ -79,8 +86,9 @@
             <div class="col-sm-2 my-3">
                 <div class="card" style="width: 240px;">
                   <div class="card-body">
-                    <img src="img/girlslikeyou.jpg" width="200px;" alt="">
-                    <h5 class="card-title">Title</h5>
+
+                    <img class="btn" id="btn3" src="img/bruno mars.jpg" width="200px;" alt="">
+                    <h5 class="card-title">Bruno Mars</h5>
                     <p class="card-text">Content</p>
                   </div>
                 </div>
@@ -88,10 +96,13 @@
         </div>  
       </div>
 
-      <div class="container" style="" >
+      <div class="container" id="audio-player">
       <div class="row" style="margin-top: 340px;">
         <div class="col-sm-2 my-3">
           <div class="card-bottom">
+            <div class="container">
+              <p id="song" class="text-danger bg-primary"> </p>
+            </div>
           <audio id="audio" src="audio/Maroon 5.mp3" controls controlsList="nodownload" style="width: 1040px;"></audio>
         </div>
         </div>
@@ -99,15 +110,32 @@
     </div>
 </body>
 
-
-
-
 <script>
 
-  $("#audio").click(function(){
+  $("#btn").click(function(){
 
-    alert("song is playing...");
+    Audio.name("src=audio/promises.mp3");
+
   });
+
+
+  $("#btn1").click(function(){
+
+    $("#song").html("Maroon 5");
+
+  });
+
+    $("#btn2").click(function(){
+
+  $("#song").html("Promises");
+
+});
+
+  $("#btn3").click(function(){
+
+$("#song").html("Bruno Mars");
+
+});
 
 
 
